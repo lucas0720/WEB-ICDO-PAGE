@@ -1,0 +1,154 @@
+/* 1. Base */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/typography.css';
+
+/* 2. Layout */
+@import './layout/header.css';
+@import './layout/footer.css';
+
+/* 3. Components */
+
+@import './components/hero.css';
+@import './components/services.css';
+ 
+.next{
+    background-color: royalblue;
+}
+/*
+
+.services {
+    background-color: 
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.services__container {
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+    min-height: 500px; 
+}
+
+
+.services__title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 900;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    
+   
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+}
+
+
+.services__content {
+    flex: 1; 
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr; 
+    align-items: center;
+    gap: 2rem;
+}
+
+.services__images {
+    position: relative; 
+    height: 400px;
+    width: 100%;
+}
+
+.services__figure {
+    position: absolute;
+    width: 200px;      
+    height: 300px;
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 4px solid #fff; 
+}
+
+.services__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services__figure--back {
+    top: 0;
+    left: 10%;
+    z-index: 1;
+    transform: rotate(-3deg);
+}
+
+.services__figure--front {
+    bottom: 0;
+    right: 15%; 
+    z-index: 2;
+    transform: rotate(3deg);
+}
+
+
+.services__data {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.services__time {
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 0.9;
+    color: #1a1a1a;
+}
+
+.services__address {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.services__address-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 768px) {
+    .services__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services__title {
+        writing-mode: horizontal-tb;
+        transform: rotate(0);
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .services__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .services__images {
+        height: 320px; 
+    }
+    
+    .services__figure--back { left: 5%; }
+    .services__figure--front { right: 5%; }
+
+    .services__data {
+        text-align: center;
+    }
+}
