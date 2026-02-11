@@ -1,0 +1,251 @@
+/* Header de la sección */
+.mission--and--pilares__header {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    clip-path: inset(0);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+    .mission--and--pilares__background-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        padding: 0;
+
+        .mission--and--pilares__bg-img {
+
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            object-position: 50% 25%;
+            filter: brightness(0.6); 
+            
+            z-index: -1;
+            will-change: transform;
+            
+        }
+    }
+
+    .mission--and--pilares__title-wrapper {
+        width: 100%;
+        padding-left:3% ;
+    }
+
+    .mission--and--pilares__title {
+        font-size: 6.2rem;
+        color: var(--color-bg-body);
+        text-transform: uppercase;
+        font-weight: 900;
+        line-height: 0.8; 
+        margin: 0;
+        padding: 0;
+        line-height: 0.7;
+    }
+}
+
+
+.mission--and--pilares__grid {
+    display: grid;
+    grid-template-columns: minmax(0 , 676fr) minmax(0 , 604fr);
+    width: 100%;
+
+    .mission--and--pilares__mission{
+        scroll-margin-top: 12rem;
+        /*
+        ajustamnos el ancho para que no se extienda demasiado en pantallas grandes
+        */
+        width: 100%;
+        max-width: 676px;
+        display: flex;
+        position: relative;
+        
+        .mission--and--pilares__pilar-item {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            font-weight: 600;
+            color: var(--color-text-main);
+            text-align: justify;
+            min-width: 1rem;
+            margin: 5rem clamp(1rem, 15vw, 13rem) 4rem 6%;
+        }
+
+        .mission--and--pilares__title{
+            font-size: 6.2rem;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            color: var(--color-primary);
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 0.7; 
+            margin: 0;
+            padding: 0;
+            line-height: 0.7;
+            position: relative;
+            bottom: -0.3rem;
+
+            flex-shrink: 0;
+        }
+
+
+    }
+
+    .mission--and--pilares__pilares{
+        scroll-margin-top: 12rem;
+        /*
+        aqui tambine lo mismo ajustamos unos anchos maximos
+        */
+        width: 100%;
+        max-width: 604px;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        
+        padding: 3rem 5% 3.5rem 6rem;
+        
+        .mission--and--pilares__pilar-item{
+            h4{
+                font-size: 1.4rem;
+                font-weight: 800;
+                
+            }
+        }
+    }
+}
+
+
+.mission--and--pilares__left{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-bg-body);
+    justify-content: flex-end;
+
+}
+.mission--and--pilares__right{
+    width: 100%;
+    display: flex;
+    background-color: var(--color-primary);
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mission--and--pilares__header {
+        .mission--and--pilares__title {
+            font-size: clamp(2.5rem, 24vw, 6.2rem);
+        }
+    }
+
+    .mission--and--pilares__grid {
+        grid-template-columns: minmax(0 , 1fr);
+        gap: 0rem; 
+        column-gap: 0rem;
+
+        .mission--and--pilares__mission{
+            width: 100%;
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            .mission--and--pilares__pilar-item {
+                font-size: 1.5rem;
+                line-height: 1.6;
+                font-weight: 600;
+                color: var(--color-text-main);
+                text-align: justify;
+                min-width: 1rem;
+                margin: 8rem 4rem 4rem 4rem; 
+            }
+
+            .mission--and--pilares__title{
+                width: fit-content;
+                justify-self: center;
+                font-size: clamp(2.5rem, 21vw, 6.2rem);
+                white-space: nowrap;
+
+                writing-mode: horizontal-tb;
+                transform: none;
+                color: var(--color-primary);
+                text-transform: uppercase;
+                font-weight: 900;
+                line-height: 0.7; 
+                margin: 0 0 0 3%;
+                padding: 0;
+                line-height: 0.7;
+                position: relative;
+                bottom: -0.1rem;
+                flex-shrink: 0;
+            }
+        }
+
+        .mission--and--pilares__pilares{
+            max-width:none;
+            padding:  8rem 4rem 4rem 4rem; 
+        }
+    }
+
+    /*
+    .mission--and--pilares__grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .mission--and--pilares__left,.mission--and--pilares__right {
+        justify-content: center;
+        height: auto; 
+    }
+
+    .mission--and--pilares__mission {
+        flex-direction: column; 
+        align-items: center;
+        max-width: 100%; 
+        padding: 0;   
+
+
+        .mission--and--pilares__pilar-item {
+       
+            margin: 4rem 2rem 2rem 2rem; 
+            text-align: center;
+           
+        }
+
+        .mission--and--pilares__title {
+            writing-mode: horizontal-tb;
+            transform: none;
+            position: static; 
+            
+            font-size: 4rem; 
+            margin-top: 2rem;
+            margin-bottom: 0; 
+            width: 100%;
+            text-align: center;
+            background-color: var(--color-bg-body);
+            padding-bottom: 2rem; 
+        }
+    }
+
+    .mission--and--pilares__pilares {
+        max-width: 100%; 
+        padding: 4rem 2rem; 
+        
+        align-items: center; 
+        text-align: center;
+
+        .mission--and--pilares__pilar-item {
+            width: 100%;
+            max-width: 500px; 
+        }
+    }
+        */
+}
