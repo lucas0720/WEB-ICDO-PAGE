@@ -11,10 +11,10 @@
 
 @import './components/hero.css';
 @import './components/services.css';
- @import './components/mision&pilares.css';
-.next{
-    background-color: royalblue;
-}
+@import './components/mision&pilares.css';
+@import './components/vision.css';
+
+
 /*
 
 .services {

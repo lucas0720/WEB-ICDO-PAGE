@@ -13,7 +13,7 @@
     }
 }
 
-.hero__bg-wrapper{
+.hero__bg--wrapper{
     position: absolute;
     top: 0;
     left: 0;
@@ -62,4 +62,3 @@
     }
 
 }
-
