@@ -130,7 +130,7 @@
             
             .vision__gridR--container {
                 max-width: 100%; 
-                padding: 4rem 4rem;
+                padding: 8rem clamp(1rem, 15vw, 13rem) 8rem clamp(1rem, 15vw, 13rem)  ;
                 flex-direction: column-reverse; 
                 gap: 4rem;
                 text-align: center;

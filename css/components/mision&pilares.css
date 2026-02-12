@@ -43,9 +43,10 @@
 
             width: auto;
             min-width: 100%;
+            
             height: 100vh;
             left: 50%;
-        transform: translateX(-50%);
+            transform: translateX(-50%);
         }
     }
 
@@ -152,6 +153,11 @@
 
 
 @media screen and (max-width: 768px) {
+    .mission--and--pilares__header {
+        width: 100%;
+        height: 50vh;
+
+    }
     .mission--and--pilares__header {
         .mission--and--pilares__title {
             font-size: clamp(2.5rem, 24vw, 6.2rem);
