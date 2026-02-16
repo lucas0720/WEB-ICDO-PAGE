@@ -1,0 +1,21 @@
+.cdoh{
+    background-color: var(--color-text-main);
+}
+
+.cdoh__container{
+    color: var(--color-bg-body);
+    display: flex;
+    width:100%;
+    padding: 4rem 3% 4rem 3%;
+}
+
+.cdoh__text{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+
+    .cdoh__title{
+        font-size: 6.2rem;
+    }
+    
+}

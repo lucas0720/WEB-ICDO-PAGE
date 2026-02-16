@@ -1,7 +1,7 @@
 .services{
     background-color: var(--color-bg-body);
     overflow: hidden;
-    scroll-margin-top: 6rem;
+    scroll-margin-top:15rem;
 }
 
 .services__container {

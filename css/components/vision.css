@@ -1,8 +1,8 @@
 .vision__grid {
     display: grid;
     grid-template-columns: calc(50% - 106px) calc(50% + 106px);
-    
-
+    scroll-margin-top: 5rem;
+   
     .vision__gridL {
         position: relative;
 

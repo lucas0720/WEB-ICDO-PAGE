@@ -2,15 +2,10 @@
 
     width: 100%;
     height: 100vh;
-    min-height: 70.5rem;
-    max-height: 120rem;
+
     position: relative;
     overflow: hidden;
 
-    @media (max-width: 1024px) {
-        min-height: 37.5rem;
-        max-height: 140rem;
-    }
 }
 
 .hero__bg--wrapper{
@@ -52,7 +47,6 @@
     .hero__picture{
         max-width: 31.25rem;
         margin: 0rem 1rem;
-        margin-bottom: 14rem;
 
         .hero__logo{
             display: block;
@@ -61,4 +55,101 @@
         }
     }
 
+}
+.carrusel {
+    position: absolute; 
+    bottom: 0;          
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-header);
+}
+.carrusel__infinito--container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    .carrusel__list {
+        display: flex;
+        width: 100%;
+        transition: transform 1s ease-in-out; 
+        
+    }
+
+    .item {
+        
+        min-width: 100%; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        padding: 1.5rem 7rem;
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--color-bg-body); 
+            text-align: center;
+            font-weight: 600;
+            
+            strong {
+                padding-top: 1rem;
+                display: block;
+                color: var(--color-primary); 
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        height: auto; 
+        min-height: 100dvh;
+        max-height: none;  
+        
+        overflow: visible; 
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__container {
+        min-height: 100dvh; 
+        height: auto;
+
+
+        .hero__picture {
+            margin-bottom: 0 !important; 
+        }
+    }
+
+    .carrusel {
+        position: relative; 
+        bottom: auto;
+        left: auto;
+
+        background-color: var(--color-bg-header); 
+        padding: 2rem 0;
+    }
+
+    .carrusel__infinito--container {
+        overflow: hidden;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        
+        .carrusel__list {
+            display: flex;
+            width: 100%;
+            transition: transform 1s ease-in-out; 
+            
+        }
+
+        .item {
+            padding: 1rem;
+        }
+    }
 }

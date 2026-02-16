@@ -9,7 +9,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    
+
     .mission--and--pilares__background-wrapper {
         position: absolute;
         top: 0;
@@ -74,7 +74,7 @@
     width: 100%;
 
     .mission--and--pilares__mission{
-        scroll-margin-top: 12rem;
+        scroll-margin-top: 17rem;
         /*
         ajustamnos el ancho para que no se extienda demasiado en pantallas grandes
         */
@@ -114,7 +114,7 @@
     }
 
     .mission--and--pilares__pilares{
-        scroll-margin-top: 12rem;
+        scroll-margin-top: 17rem;
         /*
         aqui tambine lo mismo ajustamos unos anchos maximos
         */
