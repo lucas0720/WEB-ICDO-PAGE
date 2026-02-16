@@ -1,5 +1,6 @@
 .saludo__section{
     background-color: var(--color-text-main);
+    scroll-margin-top:5.7rem;
 }
 
 .saludo__container{
@@ -7,7 +8,7 @@
     padding: 0rem 3% 4rem;
 
     .saludo__title{
-        font-size: clamp(3.1rem, 9.5vw, 6.2rem);
+        font-size: clamp(3.1rem, 9vw, 6.2rem);
         font-weight: 900;
         margin: 0;
         line-height: 0.7;
