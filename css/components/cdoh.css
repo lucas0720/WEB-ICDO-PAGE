@@ -1,6 +1,7 @@
 .cdoh{
     background-color: var(--color-text-main);
     width: 100%;
+    scroll-margin-top: 5.68rem;
 }
 
 .cdoh__container{
