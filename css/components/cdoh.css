@@ -1,21 +1,102 @@
 .cdoh{
     background-color: var(--color-text-main);
+    width: 100%;
 }
 
 .cdoh__container{
     color: var(--color-bg-body);
     display: flex;
     width:100%;
+    align-items: stretch;
+    
     padding: 4rem 3% 4rem 3%;
 }
 
 .cdoh__text{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 50%;
+    font-size: 1.5rem;
+    gap: 2rem;
+    padding-right: 3rem;
+    text-align: justify;
+
 
     .cdoh__title{
-        font-size: 6.2rem;
+        font-size: clamp(5rem, 8vw, 6.2rem);
+        margin: 0;
+        line-height: 0.8;
+        flex-shrink: 0;
     }
     
+}
+
+.cdoh__carrusel {
+    position: relative;     
+    width: 50%;    
+    display: flex;
+    flex-direction: column;        
+}
+
+.cdoh__carrusel--container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; 
+}
+
+.cdoh__list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out; 
+}
+
+.cdoh__item {
+    min-width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 0; 
+
+    img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 4/3;
+     
+        object-fit: cover; 
+        display: block;
+        border-radius: 1rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    }
+}
+
+/* =========================================
+   RESPONSIVE (CELULAR)
+   ========================================= */
+@media screen and (max-width: 768px) {
+    .cdoh__container {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        align-items: center;
+    }
+
+    .cdoh__text {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .cdoh__carrusel {
+        width: 100%;
+        height: 400px;
+    }
+
+    .cdoh__item img {
+        aspect-ratio: 4/3; 
+    }
 }
