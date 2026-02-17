@@ -30,7 +30,7 @@
         object-fit: cover; 
         object-position: center top;
         z-index: 0;
-       
+      
     }
 }
 
@@ -110,7 +110,7 @@
         min-height: 100dvh;
         max-height: none;  
         
-        overflow: visible; 
+        overflow: hidden; 
 
         display: flex;
         flex-direction: column;
