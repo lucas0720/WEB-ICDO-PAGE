@@ -91,6 +91,12 @@
             text-align: justify;
             min-width: 1rem;
             margin: 5rem clamp(1rem, 15vw, 13rem) 4rem 6%;
+
+            span{
+                padding-top: 1rem;
+                display: block;
+                text-transform: uppercase;
+            }
         }
 
         .mission--and--pilares__title{

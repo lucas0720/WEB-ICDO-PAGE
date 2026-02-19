@@ -62,6 +62,8 @@
     left: 0;
     width: 100%;
     background-color: var(--color-bg-header);
+
+    padding: 1rem 7rem;
 }
 .carrusel__infinito--container {
     overflow: hidden;
@@ -82,7 +84,6 @@
         display: flex;
         justify-content: center; 
         align-items: center;    
-        padding: 1.5rem 7rem;
 
         p {
             font-size: 0.9rem;

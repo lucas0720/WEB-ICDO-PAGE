@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
         
         track.style.transform = "translateX(" + porcentaje + "%)";
         
-    }, 8000); 
+    }, 6000); 
 });

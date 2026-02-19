@@ -1,11 +1,11 @@
 .cdoh{
-    background-color: var(--color-text-main);
+    background-color: var(--color-bg-body);
     width: 100%;
     scroll-margin-top: 5.68rem;
 }
 
 .cdoh__container{
-    color: var(--color-bg-body);
+    color: var(--color-text-main);
     display: flex;
     width:100%;
     align-items: stretch;
@@ -22,7 +22,7 @@
     gap: 2rem;
     padding-right: 3rem;
     text-align: justify;
-
+    
 
     .cdoh__title{
         font-size: clamp(5rem, 8vw, 6.2rem);
@@ -37,7 +37,8 @@
     position: relative;     
     width: 50%;    
     display: flex;
-    flex-direction: column;        
+    flex-direction: column;  
+    padding-left:1.5rem ;      
 }
 
 .cdoh__carrusel--container {
@@ -87,7 +88,7 @@
     .cdoh__text {
         width: 100%;
         max-width: 100%;
-        text-align: center;
+
         padding-right: 0;
         margin-bottom: 2rem;
     }
@@ -95,6 +96,7 @@
     .cdoh__carrusel {
         width: 100%;
         height: 400px;
+        padding-left:0rem ; 
     }
 
     .cdoh__item img {
